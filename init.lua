@@ -15,6 +15,7 @@ vim.opt.signcolumn = "auto"
 vim.opt.wrap = false
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
+vim.opt.cc = "80"
 
 -- Set Color Scheme Settings
 ColorMyPencils()
