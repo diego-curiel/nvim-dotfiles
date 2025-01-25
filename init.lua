@@ -17,7 +17,14 @@ vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.cc = "80"
 
+function ForceVirtColumnHl()
+	vim.api.nvim_set_hl(0, "VirtColumn",
+						{sp = "#e8e8e8", bg = none, force = true})
+end
 -- Set Color Scheme Settings
 ColorMyPencils()
+
+-- Set VirtColumn Color
+ForceVirtColumnHl()
 
 
