@@ -12,10 +12,8 @@ return {
 			require('mason-lspconfig').setup({
 				ensure_installed = { -- lsp list
 					'pyright',
-					'jsonnet_ls',
-					'quick_lint_js',
 					'clangd',
-					'ts_ls',
+					'biome',
 				},
 				handlers = {
 					function(server_name)
