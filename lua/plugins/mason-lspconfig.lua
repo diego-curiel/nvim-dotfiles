@@ -11,6 +11,7 @@ return {
 		config = function()
 			require('mason-lspconfig').setup({
 				ensure_installed = { -- lsp list
+					'ast-grep',
 					'pyright',
 					'clangd',
 					'biome',
