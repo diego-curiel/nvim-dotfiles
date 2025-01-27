@@ -28,7 +28,7 @@ return {
 				mapping = cmp.mapping.preset.insert({
 					-- Confirm autocompletion with enter
 					['<CR>'] = cmp.mapping.confirm({select=false}),
-					['<Tab>'] = cmp.mapping.complete(),
+					['<C-Space>'] = cmp.mapping.complete(),
 				}),
 				window = {
 					documentation = cmp.config.window.bordered(),
