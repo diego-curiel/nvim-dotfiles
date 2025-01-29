@@ -22,9 +22,6 @@ return {
 						vim.snippet.expand(args.body)
 					end,
 				},
-				completion = {
-					autocomplete = false,
-				},
 				mapping = cmp.mapping.preset.insert({
 					-- Confirm autocompletion with enter
 					['<CR>'] = cmp.mapping.confirm({select=false}),
