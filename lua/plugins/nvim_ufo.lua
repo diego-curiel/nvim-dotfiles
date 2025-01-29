@@ -4,7 +4,8 @@ return {
 		name = 'ufo',
 
 		dependencies = {
-			'kevinhwang91/promise-async'
+			'kevinhwang91/promise-async',
+			'neovim/nvim-lspconfig',
 		},
 
 		config = function()
@@ -24,7 +25,7 @@ return {
 				dynamicRegistration = false,
 				lineFoldingOnly = true
 			}
-			local language_servers = lspconfig.util._available_servers()
+			local language_servers = lspconfig.util.available_servers()
 			for _,ls in ipairs(language_servers) do
 				lspconfig[ls].setup({
 					capabilities = capabilities
