@@ -20,13 +20,3 @@ vim.opt.cc = "80"
 -- Reserve a space in the gutter
 vim.opt.signcolumn = 'yes'
 
--- This just a small fix, won't last long
--- function ForceVirtColumnHl()
--- 	vim.api.nvim_set_hl(0, "VirtColumn",
--- 						{sp = "#e8e8e8", bg = none, force = true})
--- end
-
--- Set VirtColumn Color
--- ForceVirtColumnHl()
-
-
