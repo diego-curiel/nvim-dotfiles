@@ -1,4 +1,3 @@
-require("config.colorscheme") -- Load colorscheme settings
 require("config.keymaps") -- Load personalized keymaps
 require("config.lazy") -- Lazy plugin loader
 
@@ -22,14 +21,12 @@ vim.opt.cc = "80"
 vim.opt.signcolumn = 'yes'
 
 -- This just a small fix, won't last long
-function ForceVirtColumnHl()
-	vim.api.nvim_set_hl(0, "VirtColumn",
-						{sp = "#e8e8e8", bg = none, force = true})
-end
--- Set Color Scheme Settings
-ColorMyPencils()
+-- function ForceVirtColumnHl()
+-- 	vim.api.nvim_set_hl(0, "VirtColumn",
+-- 						{sp = "#e8e8e8", bg = none, force = true})
+-- end
 
 -- Set VirtColumn Color
-ForceVirtColumnHl()
+-- ForceVirtColumnHl()
 
 
