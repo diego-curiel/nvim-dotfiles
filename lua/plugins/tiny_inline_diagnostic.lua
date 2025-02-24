@@ -37,7 +37,7 @@ return {
 					show_source = false,
 
 					-- Use icons defined in the diagnostic configuration
-					use_icons_from_diagnostic = false,
+					use_icons_from_diagnostic = true,
 
 					-- Add messages to diagnostics when multiline diagnostics are enabled
 					-- If set to false, only signs will be displayed
@@ -64,7 +64,7 @@ return {
 					-- }
 					multilines = {
 						-- Enable multiline diagnostic messages
-						enabled = false,
+						enabled = true,
 
 						-- Always show messages on all lines for multiline diagnostics
 						always_show = false,
