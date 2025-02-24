@@ -15,6 +15,8 @@ return {
 					'pyright',
 					'clangd',
 					'biome',
+					'emmet_language_server',
+					'html',
 				},
 				handlers = {
 					function(server_name)
@@ -22,6 +24,6 @@ return {
 					end,
 				},
 			})
-		end,
+		end
 	}
 }
