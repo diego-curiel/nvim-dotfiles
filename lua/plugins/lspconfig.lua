@@ -40,7 +40,7 @@ return {
 				},
 			})
 			-- ts_ls setup
-			ts_ls.setup{
+			lspconfig.ts_ls.setup{
 				init_options = {
 					plugins = {},
 				},
