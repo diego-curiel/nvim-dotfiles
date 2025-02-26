@@ -1,10 +1,10 @@
 # Personal Nvim dotfiles
 This repository contains my personal neovim configuration.
-# Plugin List
-## Plugin manager
+## Plugin List
+### Plugin manager
 * [folke/lazy.nvim](https://github.com/folke/lazy.nvim) 
 
-## Plugins
+### Plugins
 * [catppuccin/nvim](https://github.com/catppuccin/nvim)
 * [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 * [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
@@ -18,18 +18,18 @@ This repository contains my personal neovim configuration.
 * [rachartier/tiny-inline-diagnostic.nvim](https://github.com/rachartier/tiny-inline-diagnostic.nvim)
 * [mbbill/undotree](https://github.com/mbbill/undotree)
 
-# Requirements
-## Lazy (plugin manager)
+## Requirements
+### Lazy (plugin manager)
 * Any nerdfont
 * neovim 0.8.0 or newer
 * git
 * lua
 * luarocks
 
-## Mason
+### Mason
 *Note: Versions and package names may vary across OSes and Linux distros. This list contains the package names for the Arch Linux repo.*
 
-### Needed
+#### Needed
 * neovim 0.7.0 or newer
 * bash
 * curl
@@ -43,7 +43,7 @@ This repository contains my personal neovim configuration.
 * unzip
 * wget
 
-### Optional 
+#### Optional 
 * cargo
 * composer
 * go
@@ -53,13 +53,13 @@ This repository contains my personal neovim configuration.
 * ruby
 * rubygems
 
-### npm packages
+#### npm packages
 * node
 
-## Tiny-inline-diagnostic
+### Tiny-inline-diagnostic
 *Disable if necessary.*
 
 * neovim 0.10.0 or newer
 
-## Other plugins
+### Other plugins
 Check the README.md for each one. I just listed the most important/troublesome ones.
