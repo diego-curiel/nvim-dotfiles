@@ -12,25 +12,29 @@ return {
 			local cmp = require('cmp')
 
 			cmp.setup({
-				sources = {
-					{name = 'nvim_lsp'},
-					{name = 'buffer'},
-				},
 				snippet = {
+					-- REQUIRED - you must specify a snippet engine
 					expand = function(args)
-						-- You need Neovim v0.10 to use vim.snippet
-						vim.snippet.expand(args.body)
+						require('snippy').expand_snippet(args.body) 
 					end,
 				},
-				mapping = cmp.mapping.preset.insert({
-					-- Confirm autocompletion with enter
-					['<CR>'] = cmp.mapping.confirm({select=false}),
-					['<C-Space>'] = cmp.mapping.complete(),
-				}),
 				window = {
-					documentation = cmp.config.window.bordered(),
 					completion = cmp.config.window.bordered(),
+					documentation = cmp.config.window.bordered(),
 				},
+				mapping = cmp.mapping.preset.insert({
+					['<C-b>'] = cmp.mapping.scroll_docs(-4),
+					['<C-f>'] = cmp.mapping.scroll_docs(4),
+					['<C-Space>'] = cmp.mapping.complete(),
+					['<C-e>'] = cmp.mapping.abort(),
+					-- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+					['<CR>'] = cmp.mapping.confirm({ select = true }),
+				}),
+				sources = cmp.config.sources({
+					{ name = 'nvim_lsp' },
+					{ name = 'snippy' },
+					{ name = 'buffer' },
+				})
 			})
 		end
 	}
