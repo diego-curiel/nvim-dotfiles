@@ -7,12 +7,14 @@ return {
 			-- Add cmp_nvim_lsp capabilities settings to lspconfig
 			-- This should be executed before you configure any language server
 			local lspconfig_defaults = require('lspconfig').util.default_config
-			local lspconfig = require('lspconfig')
 			lspconfig_defaults.capabilities = vim.tbl_deep_extend(
 				'force',
 				lspconfig_defaults.capabilities,
 				require('cmp_nvim_lsp').default_capabilities()
 			)
+			
+			-- Language server settings
+			local lspconfig = require('lspconfig')
 			-- emmet_language_server setup	
 			lspconfig.emmet_language_server.setup({
 				filetypes = { "css", "eruby", "html", "javascriptreact", "less", "sass", "scss", "pug", "typescriptreact" },
