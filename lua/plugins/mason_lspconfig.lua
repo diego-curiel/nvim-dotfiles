@@ -17,6 +17,7 @@ return {
 					'biome',
 					'emmet_language_server',
 					'html',
+					'ts_ls',
 				},
 				handlers = {
 					function(server_name)
