@@ -47,6 +47,7 @@ return {
 					plugins = {},
 				},
 				filetypes = {
+					"html",
 					"javascript",
 					"typescript",
 				},
