@@ -12,12 +12,6 @@ return {
 			local cmp = require('cmp')
 
 			cmp.setup({
-				snippet = {
-					-- REQUIRED - you must specify a snippet engine
-					expand = function(args)
-						require('snippy').expand_snippet(args.body) 
-					end,
-				},
 				window = {
 					completion = cmp.config.window.bordered(),
 					documentation = cmp.config.window.bordered(),
@@ -32,7 +26,6 @@ return {
 				}),
 				sources = cmp.config.sources({
 					{ name = 'nvim_lsp' },
-					{ name = 'snippy' },
 					{ name = 'buffer' },
 				})
 			})
